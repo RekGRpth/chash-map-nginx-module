@@ -10,6 +10,7 @@ Table of Contents
 
 * [Name](#name)
 * [Status](#status)
+* [Version](#version)
 * [Synopsis](#synopsis)
 * [Description](#description)
 * [Directives](#directives)
@@ -24,6 +25,10 @@ Status
 ======
 
 This module is production ready.
+
+Version
+=======
+This document describes chash_map [v0.01](https://github.com/Wine93/chash-map-nginx-module/tags) released on 27 Sep 2018.
 
 Synopsis
 ========
