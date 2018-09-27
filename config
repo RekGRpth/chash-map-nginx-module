@@ -1,0 +1,15 @@
+ngx_addon_name=ngx_http_chash_map_module
+CHASH_MAP_SRCS="$ngx_addon_dir/src/ngx_http_chash_map_module.c"
+
+if [ -n "$ngx_module_link" ]; then
+    ngx_module_type=HTTP
+    ngx_module_name="$ngx_addon_name"
+    ngx_module_srcs="$CHASH_MAP_SRCS"
+
+    . auto/module
+else
+    HTTP_MODULES="$HTTP_MODULES $ngx_addon_name"
+    NGX_ADDON_SRCS="$NGX_ADDON_SRCS $CHASH_MAP_SRCS"
+fi
+
+have=NGX_CHASH_MAP_MODULE . auto/have
